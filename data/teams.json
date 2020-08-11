@@ -1,0 +1,85 @@
+{
+    "name":"Premier League 2020/21",
+    "teams":[
+       {
+           "teamId" : 1, 
+           "teamName" : "Arsenal" 
+       },
+       {
+            "teamId" : 2,
+            "teamName" : "Aston Villa" 
+        },     
+        {
+            "teamId" : 3,
+             "teamName" : "Brighton & Hove Albion" 
+         },
+         {
+            "teamId" : 4,
+            "teamName" : "Burnley" 
+        },
+        {
+            "teamId" : 5,
+             "teamName" : "Chelsea" 
+         },
+         {
+            "teamId" : 6,
+            "teamName" : "Crystal Palace" 
+        },
+        {
+            "teamId" : 7,
+             "teamName" : "Everton" 
+         },
+         {
+            "teamId" : 8,
+            "teamName" : "Fulham" 
+        },  
+         {
+            "teamId" : 9,
+            "teamName" : "Leeds United" 
+        },
+         {
+            "teamId" : 10,
+            "teamName" : "Leicester City" 
+        },
+        {
+            "teamId" : 11,
+             "teamName" : "Liverpool" 
+         },
+         {
+            "teamId" : 12,
+            "teamName" : "Manchester City" 
+        },
+        {
+            "teamId" : 13,
+             "teamName" : "Manchester United" 
+         },
+         {
+            "teamId" : 14,
+            "teamName" : "Newcastle United" 
+        },
+         {
+            "teamId" : 15,
+             "teamName" : "Sheffield United" 
+         },
+         {
+            "teamId" : 16,
+              "teamName" : "Southampton" 
+          },
+          {
+            "teamId" : 17,
+             "teamName" : "Tottenham Hotspur" 
+         },
+         {
+            "teamId" : 18,
+              "teamName" : "West Bromwich Albion" 
+          },
+          {
+            "teamId" : 19,
+             "teamName" : "West Ham United" 
+         },
+         {
+            "teamId" : 20,
+              "teamName" : "Wolverhampton Wanderers" 
+          }
+    ]
+}
