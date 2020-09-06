@@ -1,8 +1,8 @@
 var express = require("express");
 var router = express.Router();
-let data = require("../data/predictions.json");
+let data = require("../data/predictions.json"); //Swap to predictions.json when working with new file
 
-var rounds = data.rounds;
+var rounds = data[0].rounds;
 var response = hydrateDT();
 
 router.get("/", function(req, res) {
@@ -116,7 +116,7 @@ function hydrateDT() {
     }
   
     dataTable.sort((a, b) => b.points - a.points) //not sorting by GD at the moment
-  
+    
     return dataTable
   }
   

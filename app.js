@@ -8,6 +8,9 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var testAPIRouter = require("./routes/testAPI");
 var leagueTableRouter = require("./routes/getLeagueTable");
+var allFixturesRouter = require("./routes/getAllFixtures");
+var generateFixturesRouter = require("./routes/generateFixtures");
+var updateGameweek = require("./routes/updateGameweek");
 
 var app = express();
 
@@ -25,6 +28,9 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use("/testAPI", testAPIRouter);
 app.use("/getLeagueTable", leagueTableRouter);
+app.use("/getAllFixtures", allFixturesRouter);
+app.use("/generateFixtures", generateFixturesRouter);
+app.use("/updateGameweek", updateGameweek);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
