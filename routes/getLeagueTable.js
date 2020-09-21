@@ -1,6 +1,6 @@
 var express = require("express");
 var router = express.Router();
-let data = require("../data/predictions.json"); //Swap to predictions.json when working with new file
+let data = require("../data/predictions.json");
 
 var rounds = data[0].rounds;
 var response = hydrateDT();

@@ -1,15 +1,17 @@
 var express = require("express");
 var router = express.Router();
-//const fs = require('fs');
-//var data = require("../data/predictions.json");
-var fixtureArray = require("../data/predictions.json");
+const fs = require('fs');
+const fileName = "C:/Users/nick_/Documents/Dev/score-predictor-api/data/predictions.json";
+let fixtureArray = require("../data/predictions.json");
 
-updateGameweek();
+router.get("/:newGW/:fixtureId", function(req, res) { //need to accept gameWeek and fixtureId as args
 
-router.get("/", function(req, res) { //need to accept gameWeek and fixtureId as args
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     res.setHeader('Content-Type', 'application/json');
+
+    updateGameweek(req.params["newGW"], req.params["fixtureId"]);
+ 
     res.json(fixtureArray);
 });
 
@@ -18,12 +20,12 @@ module.exports = router;
 //run npm start to start server
 //search for http://localhost:9000/updateGameweek in the browser to see the response
 
-function updateGameweek() { //need to accept gameWeek and fixtureId as args
-    
+function updateGameweek(newGW, fixtureId) { //need to accept gameWeek and fixtureId as args
+    console.log("newGW: " + newGW);
     console.log(fixtureArray);
 
-    let gameWeekID = 30; //pass gameWeek as args
-    let fixtureToMoveIndex = fixtureArray[0].rounds[0].matches.findIndex(e => e.fixtureId === "EVELIV28373"); //pass fixtureId as args
+    let gameWeekID = parseInt(newGW); //pass gameWeek as args
+    let fixtureToMoveIndex = fixtureArray[0].rounds[0].matches.findIndex(e => e.fixtureId === fixtureId); //pass fixtureId as args
 
     console.log("Index of fixture to be moved:");
     console.log(fixtureToMoveIndex);
@@ -32,17 +34,8 @@ function updateGameweek() { //need to accept gameWeek and fixtureId as args
 
     fixtureArray[0].rounds[0].matches.splice(fixtureToMoveIndex, 1);
     console.log("Fixture:");
-    console.log(fixture);
-
-    //need to write to file that fixture has been removed
-    //file.key = "new value";
-
-    /*fs.writeFile(fixtureArray, JSON.stringify(fixtureArray), function writeJSON(err) {
-    if (err) return console.log(err);
-    console.log(JSON.stringify(fixtureArray));
-    console.log('writing to ' + fixtureArray);
-    });*/
-
+    console.log(fixture); 
+   
     let gameWeekIndex = fixtureArray[0].rounds.findIndex(e => e.gw === gameWeekID);
     console.log("GW index:");
     console.log(gameWeekIndex);
@@ -51,7 +44,14 @@ function updateGameweek() { //need to accept gameWeek and fixtureId as args
     console.log("GW index 2:");
     console.log(fixtureArray[0].rounds[gameWeekIndex]);
 
-    //need to write to file that fixture has been added back in at new gw index
+    fs.writeFile(fileName, JSON.stringify(fixtureArray, null, 2), function(err) {
+        if (err) {
+            return console.log(err);
+        } 
+        console.log("file saved to " + fileName);
+    });
+
+    console.log("Save to file that removes and re-adds fixture complete");
     
     console.log("Array:");
     console.log(fixtureArray);
