@@ -4,7 +4,7 @@ const fs = require('fs');
 const fileName = "C:/Users/nick_/Documents/Dev/score-predictor-api/data/predictions.json";
 let fixtureArray = require("../data/predictions.json");
 
-router.get("/:newGW/:fixtureId", function(req, res) { //need to accept gameWeek and fixtureId as args
+router.get("/:newGW/:fixtureId", function(req, res) {
 
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
@@ -20,21 +20,27 @@ module.exports = router;
 //run npm start to start server
 //search for http://localhost:9000/updateGameweek in the browser to see the response
 
-function updateGameweek(newGW, fixtureId) { //need to accept gameWeek and fixtureId as args
-    console.log("newGW: " + newGW);
-    console.log(fixtureArray);
+function updateGameweek(newGW, fixtureId) {
 
-    let gameWeekID = parseInt(newGW); //pass gameWeek as args
-    let fixtureToMoveIndex = fixtureArray[0].rounds[0].matches.findIndex(e => e.fixtureId === fixtureId); //pass fixtureId as args
+    let gameWeekID = parseInt(newGW);    
+    let allRounds = fixtureArray[0].rounds;
+    let fixtureToMoveIndex;
+    let fixture;
 
-    console.log("Index of fixture to be moved:");
-    console.log(fixtureToMoveIndex);
+    for (var i = 0; i < allRounds.length; i++) {
 
-    let fixture = fixtureArray[0].rounds[0].matches[fixtureToMoveIndex]
+        fixtureToMoveIndex = allRounds[i].matches.findIndex(e => e.fixtureId === fixtureId);
+        console.log(fixtureToMoveIndex);
+        
+        if (fixtureToMoveIndex > -1) {
+            
+            fixture = fixtureArray[0].rounds[i].matches[fixtureToMoveIndex]
 
-    fixtureArray[0].rounds[0].matches.splice(fixtureToMoveIndex, 1);
-    console.log("Fixture:");
-    console.log(fixture); 
+            fixtureArray[0].rounds[i].matches.splice(fixtureToMoveIndex, 1);
+            console.log("Fixture: " + fixture);           
+            break;
+        }
+    }
    
     let gameWeekIndex = fixtureArray[0].rounds.findIndex(e => e.gw === gameWeekID);
     console.log("GW index:");

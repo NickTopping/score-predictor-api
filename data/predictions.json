@@ -6,26 +6,6 @@
         "gw": 0,
         "matches": [
           {
-            "fixtureId": "ARSBRE18610",
-            "date": "2000-01-01",
-            "homeTeamId": 1,
-            "homeTeamName": "Arsenal",
-            "awayTeamId": 3,
-            "awayTeamName": "Brentford",
-            "homeGoals": 0,
-            "awayGoals": 0
-          },
-          {
-            "fixtureId": "ARSBRI10724",
-            "date": "2000-01-01",
-            "homeTeamId": 1,
-            "homeTeamName": "Arsenal",
-            "awayTeamId": 4,
-            "awayTeamName": "Brighton & Hove Albion",
-            "homeGoals": 0,
-            "awayGoals": 0
-          },
-          {
             "fixtureId": "ARSCHE37507",
             "date": "2000-01-01",
             "homeTeamId": 1,
@@ -1196,16 +1176,6 @@
             "awayGoals": 0
           },
           {
-            "fixtureId": "EVEWOL80826",
-            "date": "2000-01-01",
-            "homeTeamId": 8,
-            "homeTeamName": "Everton",
-            "awayTeamId": 20,
-            "awayTeamName": "Wolverhampton Wanderers",
-            "homeGoals": 0,
-            "awayGoals": 0
-          },
-          {
             "fixtureId": "LEELEI22364",
             "date": "2000-01-01",
             "homeTeamId": 9,
@@ -1226,32 +1196,12 @@
             "awayGoals": 0
           },
           {
-            "fixtureId": "LEEMAN24542",
-            "date": "2000-01-01",
-            "homeTeamId": 9,
-            "homeTeamName": "Leeds United",
-            "awayTeamId": 12,
-            "awayTeamName": "Manchester City",
-            "homeGoals": 0,
-            "awayGoals": 0
-          },
-          {
             "fixtureId": "LEEMAN64838",
             "date": "2000-01-01",
             "homeTeamId": 9,
             "homeTeamName": "Leeds United",
             "awayTeamId": 13,
             "awayTeamName": "Manchester United",
-            "homeGoals": 0,
-            "awayGoals": 0
-          },
-          {
-            "fixtureId": "LEENEW98510",
-            "date": "2000-01-01",
-            "homeTeamId": 9,
-            "homeTeamName": "Leeds United",
-            "awayTeamId": 14,
-            "awayTeamName": "Newcastle United",
             "homeGoals": 0,
             "awayGoals": 0
           },
@@ -3474,196 +3424,6 @@
             "awayTeamName": "Manchester United",
             "homeGoals": 0,
             "awayGoals": 0
-          },
-          {
-            "fixtureId": "SOUMAN91737",
-            "date": "2000-01-01",
-            "homeTeamId": 16,
-            "homeTeamName": "Southampton",
-            "awayTeamId": 13,
-            "awayTeamName": "Manchester United",
-            "homeGoals": 0,
-            "awayGoals": 0
-          },
-          {
-            "fixtureId": "TOTMAN27448",
-            "date": "2000-01-01",
-            "homeTeamId": 17,
-            "homeTeamName": "Tottenham Hotspur",
-            "awayTeamId": 13,
-            "awayTeamName": "Manchester United",
-            "homeGoals": 0,
-            "awayGoals": 0
-          },
-          {
-            "fixtureId": "WESMAN10148",
-            "date": "2000-01-01",
-            "homeTeamId": 18,
-            "homeTeamName": "West Bromwich Albion",
-            "awayTeamId": 13,
-            "awayTeamName": "Manchester United",
-            "homeGoals": 0,
-            "awayGoals": 0
-          },
-          {
-            "fixtureId": "WESMAN25775",
-            "date": "2000-01-01",
-            "homeTeamId": 19,
-            "homeTeamName": "West Ham United",
-            "awayTeamId": 13,
-            "awayTeamName": "Manchester United",
-            "homeGoals": 0,
-            "awayGoals": 0
-          },
-          {
-            "fixtureId": "WOLMAN83587",
-            "date": "2000-01-01",
-            "homeTeamId": 20,
-            "homeTeamName": "Wolverhampton Wanderers",
-            "awayTeamId": 13,
-            "awayTeamName": "Manchester United",
-            "homeGoals": 0,
-            "awayGoals": 0
-          },
-          {
-            "fixtureId": "SHENEW40984",
-            "date": "2000-01-01",
-            "homeTeamId": 15,
-            "homeTeamName": "Sheffield United",
-            "awayTeamId": 14,
-            "awayTeamName": "Newcastle United",
-            "homeGoals": 0,
-            "awayGoals": 0
-          },
-          {
-            "fixtureId": "SOUNEW44103",
-            "date": "2000-01-01",
-            "homeTeamId": 16,
-            "homeTeamName": "Southampton",
-            "awayTeamId": 14,
-            "awayTeamName": "Newcastle United",
-            "homeGoals": 0,
-            "awayGoals": 0
-          },
-          {
-            "fixtureId": "TOTNEW21188",
-            "date": "2000-01-01",
-            "homeTeamId": 17,
-            "homeTeamName": "Tottenham Hotspur",
-            "awayTeamId": 14,
-            "awayTeamName": "Newcastle United",
-            "homeGoals": 0,
-            "awayGoals": 0
-          },
-          {
-            "fixtureId": "WESNEW38995",
-            "date": "2000-01-01",
-            "homeTeamId": 18,
-            "homeTeamName": "West Bromwich Albion",
-            "awayTeamId": 14,
-            "awayTeamName": "Newcastle United",
-            "homeGoals": 0,
-            "awayGoals": 0
-          },
-          {
-            "fixtureId": "WESNEW38520",
-            "date": "2000-01-01",
-            "homeTeamId": 19,
-            "homeTeamName": "West Ham United",
-            "awayTeamId": 14,
-            "awayTeamName": "Newcastle United",
-            "homeGoals": 0,
-            "awayGoals": 0
-          },
-          {
-            "fixtureId": "WOLNEW82114",
-            "date": "2000-01-01",
-            "homeTeamId": 20,
-            "homeTeamName": "Wolverhampton Wanderers",
-            "awayTeamId": 14,
-            "awayTeamName": "Newcastle United",
-            "homeGoals": 0,
-            "awayGoals": 0
-          },
-          {
-            "fixtureId": "SOUSHE26282",
-            "date": "2000-01-01",
-            "homeTeamId": 16,
-            "homeTeamName": "Southampton",
-            "awayTeamId": 15,
-            "awayTeamName": "Sheffield United",
-            "homeGoals": 0,
-            "awayGoals": 0
-          },
-          {
-            "fixtureId": "TOTSHE70764",
-            "date": "2000-01-01",
-            "homeTeamId": 17,
-            "homeTeamName": "Tottenham Hotspur",
-            "awayTeamId": 15,
-            "awayTeamName": "Sheffield United",
-            "homeGoals": 0,
-            "awayGoals": 0
-          },
-          {
-            "fixtureId": "WESSHE31754",
-            "date": "2000-01-01",
-            "homeTeamId": 18,
-            "homeTeamName": "West Bromwich Albion",
-            "awayTeamId": 15,
-            "awayTeamName": "Sheffield United",
-            "homeGoals": 0,
-            "awayGoals": 0
-          },
-          {
-            "fixtureId": "TOTSOU86649",
-            "date": "2000-01-01",
-            "homeTeamId": 17,
-            "homeTeamName": "Tottenham Hotspur",
-            "awayTeamId": 16,
-            "awayTeamName": "Southampton",
-            "homeGoals": 0,
-            "awayGoals": 0
-          },
-          {
-            "fixtureId": "WESSOU84872",
-            "date": "2000-01-01",
-            "homeTeamId": 18,
-            "homeTeamName": "West Bromwich Albion",
-            "awayTeamId": 16,
-            "awayTeamName": "Southampton",
-            "homeGoals": 0,
-            "awayGoals": 0
-          },
-          {
-            "fixtureId": "WESSOU59683",
-            "date": "2000-01-01",
-            "homeTeamId": 19,
-            "homeTeamName": "West Ham United",
-            "awayTeamId": 16,
-            "awayTeamName": "Southampton",
-            "homeGoals": 0,
-            "awayGoals": 0
-          },
-          {
-            "fixtureId": "WOLSOU49972",
-            "date": "2000-01-01",
-            "homeTeamId": 20,
-            "homeTeamName": "Wolverhampton Wanderers",
-            "awayTeamId": 16,
-            "awayTeamName": "Southampton",
-            "homeGoals": 0,
-            "awayGoals": 0
-          },
-          {
-            "fixtureId": "WESTOT75237",
-            "date": "2000-01-01",
-            "homeTeamId": 18,
-            "homeTeamName": "West Bromwich Albion",
-            "awayTeamId": 17,
-            "awayTeamName": "Tottenham Hotspur",
-            "homeGoals": 0,
-            "awayGoals": 0
           }
         ]
       },
@@ -3673,7 +3433,18 @@
       },
       {
         "gw": 2,
-        "matches": []
+        "matches": [
+          {
+            "fixtureId": "LEENEW98510",
+            "date": "2000-01-01",
+            "homeTeamId": 9,
+            "homeTeamName": "Leeds United",
+            "awayTeamId": 14,
+            "awayTeamName": "Newcastle United",
+            "homeGoals": 0,
+            "awayGoals": 0
+          }
+        ]
       },
       {
         "gw": 3,
@@ -3682,16 +3453,6 @@
       {
         "gw": 4,
         "matches": [
-          {
-            "fixtureId": "TOTCRY16947",
-            "date": "2000-01-01",
-            "homeTeamId": 17,
-            "homeTeamName": "Tottenham Hotspur",
-            "awayTeamId": 7,
-            "awayTeamName": "Crystal Palace",
-            "homeGoals": 0,
-            "awayGoals": 0
-          },
           {
             "fixtureId": "WOLSHE80172",
             "date": "2000-01-01",
@@ -3710,7 +3471,18 @@
       },
       {
         "gw": 6,
-        "matches": []
+        "matches": [
+          {
+            "fixtureId": "LEEMAN24542",
+            "date": "2000-01-01",
+            "homeTeamId": 9,
+            "homeTeamName": "Leeds United",
+            "awayTeamId": 12,
+            "awayTeamName": "Manchester City",
+            "homeGoals": 0,
+            "awayGoals": 0
+          }
+        ]
       },
       {
         "gw": 7,
@@ -3718,7 +3490,18 @@
       },
       {
         "gw": 8,
-        "matches": []
+        "matches": [
+          {
+            "fixtureId": "ARSBRE18610",
+            "date": "2000-01-01",
+            "homeTeamId": 1,
+            "homeTeamName": "Arsenal",
+            "awayTeamId": 3,
+            "awayTeamName": "Brentford",
+            "homeGoals": 0,
+            "awayGoals": 0
+          }
+        ]
       },
       {
         "gw": 9,
@@ -3726,7 +3509,18 @@
       },
       {
         "gw": 10,
-        "matches": []
+        "matches": [
+          {
+            "fixtureId": "ARSBRI10724",
+            "date": "2000-01-01",
+            "homeTeamId": 1,
+            "homeTeamName": "Arsenal",
+            "awayTeamId": 4,
+            "awayTeamName": "Brighton & Hove Albion",
+            "homeGoals": 0,
+            "awayGoals": 0
+          }
+        ]
       },
       {
         "gw": 11,
@@ -3855,7 +3649,18 @@
       },
       {
         "gw": 29,
-        "matches": []
+        "matches": [
+          {
+            "fixtureId": "EVEWOL80826",
+            "date": "2000-01-01",
+            "homeTeamId": 8,
+            "homeTeamName": "Everton",
+            "awayTeamId": 20,
+            "awayTeamName": "Wolverhampton Wanderers",
+            "homeGoals": 0,
+            "awayGoals": 0
+          }
+        ]
       },
       {
         "gw": 30,
@@ -3896,7 +3701,18 @@
       },
       {
         "gw": 34,
-        "matches": []
+        "matches": [
+          {
+            "fixtureId": "TOTCRY16947",
+            "date": "2000-01-01",
+            "homeTeamId": 17,
+            "homeTeamName": "Tottenham Hotspur",
+            "awayTeamId": 7,
+            "awayTeamName": "Crystal Palace",
+            "homeGoals": 0,
+            "awayGoals": 0
+          }
+        ]
       },
       {
         "gw": 35,
