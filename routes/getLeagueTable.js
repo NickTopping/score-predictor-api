@@ -121,7 +121,20 @@ function hydrateDT() {
       }
     }
   
-    dataTable.sort((a, b) => b.points - a.points) //not sorting by GD at the moment - use if statement (if points are equal, use gd)
+    //dataTable.sort((a, b) => b.points - a.points) //not sorting by GD at the moment - use if statement (if points are equal, use gd)
+
+    dataTable.sort(
+      function(a, b) {          
+         if (a.points === b.points) {
+            if (a.goalDifference === b.goalDifference){
+              //gf is only important whe gd is the same
+              return b.gf - a.gf;
+            }
+            // gd is only important when points are the same
+            return b.goalDifference - a.goalDifference;
+         }
+         return b.points - a.points;
+      });
     
     return dataTable
   }
