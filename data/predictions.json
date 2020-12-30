@@ -1482,7 +1482,7 @@
             "homeTeamName": "Manchester City",
             "awayTeamId": 16,
             "awayTeamName": "Southampton",
-            "homeGoals": 0,
+            "homeGoals": 2,
             "awayGoals": 0
           },
           {
@@ -3414,16 +3414,6 @@
             "awayTeamName": "Manchester United",
             "homeGoals": 0,
             "awayGoals": 0
-          },
-          {
-            "fixtureId": "SHEMAN41920",
-            "date": "2000-01-01",
-            "homeTeamId": 15,
-            "homeTeamName": "Sheffield United",
-            "awayTeamId": 13,
-            "awayTeamName": "Manchester United",
-            "homeGoals": 0,
-            "awayGoals": 0
           }
         ]
       },
@@ -3441,14 +3431,25 @@
             "homeTeamName": "Leeds United",
             "awayTeamId": 14,
             "awayTeamName": "Newcastle United",
-            "homeGoals": 0,
-            "awayGoals": 0
+            "homeGoals": 1,
+            "awayGoals": 2
           }
         ]
       },
       {
         "gw": 3,
-        "matches": []
+        "matches": [
+          {
+            "fixtureId": "SHEMAN41920",
+            "date": "2000-01-01",
+            "homeTeamId": 15,
+            "homeTeamName": "Sheffield United",
+            "awayTeamId": 13,
+            "awayTeamName": "Manchester United",
+            "homeGoals": 1,
+            "awayGoals": 1
+          }
+        ]
       },
       {
         "gw": 4,
@@ -3460,8 +3461,8 @@
             "homeTeamName": "Wolverhampton Wanderers",
             "awayTeamId": 15,
             "awayTeamName": "Sheffield United",
-            "homeGoals": 0,
-            "awayGoals": 0
+            "homeGoals": 2,
+            "awayGoals": 1
           }
         ]
       },
@@ -3479,8 +3480,8 @@
             "homeTeamName": "Leeds United",
             "awayTeamId": 12,
             "awayTeamName": "Manchester City",
-            "homeGoals": 0,
-            "awayGoals": 0
+            "homeGoals": 1,
+            "awayGoals": 3
           }
         ]
       },
@@ -3498,8 +3499,8 @@
             "homeTeamName": "Arsenal",
             "awayTeamId": 3,
             "awayTeamName": "Brentford",
-            "homeGoals": 0,
-            "awayGoals": 0
+            "homeGoals": 4,
+            "awayGoals": 2
           }
         ]
       },
@@ -3517,7 +3518,7 @@
             "homeTeamName": "Arsenal",
             "awayTeamId": 4,
             "awayTeamName": "Brighton & Hove Albion",
-            "homeGoals": 0,
+            "homeGoals": 1,
             "awayGoals": 0
           }
         ]
@@ -3560,7 +3561,7 @@
             "homeTeamName": "West Ham United",
             "awayTeamId": 15,
             "awayTeamName": "Sheffield United",
-            "homeGoals": 0,
+            "homeGoals": 1,
             "awayGoals": 0
           }
         ]
@@ -3587,8 +3588,8 @@
             "homeTeamName": "Leeds United",
             "awayTeamId": 20,
             "awayTeamName": "Wolverhampton Wanderers",
-            "homeGoals": 0,
-            "awayGoals": 0
+            "homeGoals": 2,
+            "awayGoals": 2
           },
           {
             "fixtureId": "CHELIV92469",
@@ -3598,7 +3599,7 @@
             "awayTeamId": 11,
             "awayTeamName": "Liverpool",
             "homeGoals": 0,
-            "awayGoals": 0
+            "awayGoals": 5
           },
           {
             "fixtureId": "WESAST94394",
@@ -3608,7 +3609,7 @@
             "awayTeamId": 2,
             "awayTeamName": "Aston Villa",
             "homeGoals": 0,
-            "awayGoals": 0
+            "awayGoals": 3
           }
         ]
       },
@@ -3630,8 +3631,8 @@
             "homeTeamName": "Everton",
             "awayTeamId": 10,
             "awayTeamName": "Leicester City",
-            "homeGoals": 0,
-            "awayGoals": 0
+            "homeGoals": 2,
+            "awayGoals": 3
           }
         ]
       },
@@ -3657,7 +3658,7 @@
             "homeTeamName": "Everton",
             "awayTeamId": 20,
             "awayTeamName": "Wolverhampton Wanderers",
-            "homeGoals": 0,
+            "homeGoals": 3,
             "awayGoals": 0
           }
         ]
@@ -3672,8 +3673,8 @@
             "homeTeamName": "Arsenal",
             "awayTeamId": 2,
             "awayTeamName": "Aston Villa",
-            "homeGoals": 0,
-            "awayGoals": 0
+            "homeGoals": 1,
+            "awayGoals": 1
           },
           {
             "fixtureId": "ARSBUR11570",
@@ -3682,7 +3683,7 @@
             "homeTeamName": "Arsenal",
             "awayTeamId": 5,
             "awayTeamName": "Burnley",
-            "homeGoals": 0,
+            "homeGoals": 5,
             "awayGoals": 0
           }
         ]
@@ -3709,7 +3710,7 @@
             "homeTeamName": "Tottenham Hotspur",
             "awayTeamId": 7,
             "awayTeamName": "Crystal Palace",
-            "homeGoals": 0,
+            "homeGoals": 2,
             "awayGoals": 0
           }
         ]

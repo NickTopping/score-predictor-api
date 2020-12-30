@@ -22,6 +22,12 @@ function hydrateDT() {
     var dataTable = [];
   
     for (var gameWeek in rounds) {
+
+      //Only use matches that have a prediction/valid fixture date against them
+      if (gameWeek == 0) {
+        continue;
+      }
+
       var fixtures = rounds[gameWeek].matches;
   
       for (var match in fixtures) {
@@ -115,7 +121,7 @@ function hydrateDT() {
       }
     }
   
-    dataTable.sort((a, b) => b.points - a.points) //not sorting by GD at the moment
+    dataTable.sort((a, b) => b.points - a.points) //not sorting by GD at the moment - use if statement (if points are equal, use gd)
     
     return dataTable
   }
