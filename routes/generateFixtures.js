@@ -1,6 +1,7 @@
 var express = require("express");
 var router = express.Router();
 let allTeams = require("../data/teams.json");
+const fs = require('fs');
 
 router.get("/", function(req, res) {
     res.header("Access-Control-Allow-Origin", "*");
@@ -10,6 +11,8 @@ router.get("/", function(req, res) {
 });
 
 module.exports = router;
+
+//if prediction.json already exists, send message as response, otherwise create file in correct location
 
 response = generateFixtures(allTeams);
 
@@ -83,19 +86,18 @@ function generateFixtures(teamList) {
     });  
 
     return arr; 
-  /*console.log(arr);
 
-    const handleSaveToPC = arr => {
-    const fileData = JSON.stringify(arr);
-    const blob = new Blob([fileData], {type: "text/plain"});
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement('a');
-    link.download = 'testFile.json';
-    link.href = url;
-    link.click();
-  }
+    //Comment line above and uncomment below to generate fixtures file "output.json""
+    /*var jsonContent = JSON.stringify(arr);
 
-  handleSaveToPC(arr);*/
+    fs.writeFile("output.json", jsonContent, 'utf8', function (err) {
+        if (err) {
+            console.log("An error occured while writing JSON Object to File.");
+            return console.log(err);
+        }
+    
+        console.log("JSON file has been saved.");
+    });*/
 }
 
 

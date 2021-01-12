@@ -108,6 +108,7 @@ function hydrateDT() {
             dataTable.push({
               teamId: teamId,
               teamName: teamName,
+              played: 1,
               wins: win,
               draws: draw,
               losses: loss,
@@ -120,8 +121,6 @@ function hydrateDT() {
         }
       }
     }
-  
-    //dataTable.sort((a, b) => b.points - a.points) //not sorting by GD at the moment - use if statement (if points are equal, use gd)
 
     dataTable.sort(
       function(a, b) {          
@@ -130,7 +129,7 @@ function hydrateDT() {
               //gf is only important whe gd is the same
               return b.gf - a.gf;
             }
-            // gd is only important when points are the same
+            //gd is only important when points are the same
             return b.goalDifference - a.goalDifference;
          }
          return b.points - a.points;
@@ -141,6 +140,7 @@ function hydrateDT() {
   
   function getTeamData(team) {
     return {
+      totalPlayed: team.wins + team.draws + team.losses,
       totalWins: team.wins,
       totalDraws: team.draws,
       totalLosses: team.losses,
@@ -178,6 +178,7 @@ function hydrateDT() {
     var currentTeam = getTeamData(dataTable[teamIndex])
     Object.assign(
       dataTable[teamIndex],
+      { played: 1 + currentTeam.totalPlayed },
       { wins: win + currentTeam.totalWins },
       { draws: draw + currentTeam.totalDraws },
       { losses: loss + currentTeam.totalLosses },
