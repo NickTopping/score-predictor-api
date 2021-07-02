@@ -6,13 +6,11 @@ var logger = require('morgan');
 var cors = require('cors')
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
 var testAPIRouter = require("./routes/testAPI");
 var leagueTableRouter = require("./routes/getLeagueTable");
 var allFixturesRouter = require("./routes/getAllFixtures");
 var generateFixturesRouter = require("./routes/generateFixtures");
-var updateGameweekRouter = require("./routes/updateGameweek");
-var updateGameweekRouter2 = require("./routes/updateGameweek2");
+var updateGameweeksRouter = require("./routes/updateGameweeks");
 
 var app = express();
 
@@ -28,13 +26,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(cors())
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
 app.use("/testAPI", testAPIRouter);
 app.use("/getLeagueTable", leagueTableRouter);
 app.use("/getAllFixtures", allFixturesRouter);
 app.use("/generateFixtures", generateFixturesRouter);
-app.use("/updateGameweek", updateGameweekRouter);
-app.use("/updateGameweek2", updateGameweekRouter2);
+app.use("/updateGameweeks", updateGameweeksRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

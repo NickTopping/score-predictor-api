@@ -1,8 +1,8 @@
-var express = require("express");
-var router = express.Router();
+const express = require("express");
+const router = express.Router();
 let allTeams = require("../data/teams.json");
 const fs = require('fs');
-var filePath = "data/output.json";
+const filePath = "data/output.json";
 
 router.get("/", function(req, res) {
     res.header("Access-Control-Allow-Origin", "*");

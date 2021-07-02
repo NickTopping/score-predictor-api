@@ -12,7 +12,7 @@ router.put('/', function (req, res) {
 
     let allRounds = data[0].rounds;
     let updatedCount = 0;
-    var reqChanges = Object.keys(req.body.gwUpdates).length;
+    let reqChanges = Object.keys(req.body.gwUpdates).length;
 
     //for each fixture in request body
     req.body.gwUpdates.forEach(function (item) {       
